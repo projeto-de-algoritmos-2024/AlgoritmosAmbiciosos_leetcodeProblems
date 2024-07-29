@@ -22,7 +22,7 @@ Neste projeto, será abordado alguns problemas disponíveis na plataforma [LeetC
 [Média: 1094. Car Pooling](https://leetcode.com/problems/car-pooling/description/)<br>
 ![](./src/assets/Sub21.png)
 
-[Média: 534. Encode and Decode TinyURL](https://leetcode.com/problems/encode-and-decode-tinyurl/description/)<br>
+[Média: 435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/)<br>
 ![](./src/assets/Sub22.png)
 
 ## Instalação 
