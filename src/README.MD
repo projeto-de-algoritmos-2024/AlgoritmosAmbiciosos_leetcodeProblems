@@ -53,20 +53,25 @@ Após isso o número de passageiros é inicializado, e o código começa a itera
 **Submissão:**<br>
 ![](./assets/Sub11.png)
 
-# Problema Médio 2
+# 435. Non-overlapping Intervals
 
-Problema: []()
+Problema: [Média: 435. Non-overlapping Intervals](https://leetcode.com/problems/non-overlapping-intervals/description/)
 
 **Descrição:** <br>
 
+Given an array of intervals intervals where intervals[i] = [starti, endi], return the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping.
 
 **Example 1:**
 
-
+Input: intervals = [[1,2],[2,3],[3,4],[1,3]]<br>
+Output: 1 <br>
+Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping.
 
 **Example 2:**
 
-
+Input: intervals = [[1,2],[1,2],[1,2]] <br>
+Output: 2 <br>
+Explanation: You need to remove two [1,2] to make the rest of the intervals non-overlapping.
 
 ## Solução
 
@@ -176,21 +181,41 @@ Após isso o resto do interval partitioning é usado, iterando nas reuniões, li
 
 ![](./assets/Sub21.png)
 
-# Problema Díficil 2
+# 135. Candy
 
-Problema: []()
+Problema: [135. Candy](https://leetcode.com/problems/candy/submissions/1337823294/)<br>
+![](./src/assets/Sub12.png)
 
 **Descrição:** <br>
+There are n children standing in a line. Each child is assigned a rating value given in the integer array ratings.
 
+You are giving candies to these children subjected to the following requirements:
+
+Each child must have at least one candy.
+Children with a higher rating get more candies than their neighbors.
+Return the minimum number of candies you need to have to distribute the candies to the children.
 
 **Example 1:**
 
+Input: ratings = [1,0,2] <br>
+Output: 5 <br>
+Explanation: You can allocate to the first, second and third child with 2, 1, 2 candies respectively.
 
 
 **Example 2:**
 
-
-
-**Example 3:**
+Input: ratings = [1,2,2] <br>
+Output: 4 <br>
+Explanation: You can allocate to the first, second and third child with 1, 2, 1 candies respectively.
+The third child gets 1 candy because it satisfies the above two conditions.
 
 ## Solução
+
+Foi usado o algorítimo ambicioso 
+
+**Exemplo:**
+
+
+
+**Submissão:**<br>
+![]()
