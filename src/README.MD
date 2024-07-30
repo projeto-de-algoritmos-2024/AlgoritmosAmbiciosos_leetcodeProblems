@@ -76,13 +76,27 @@ Explanation: You need to remove two [1,2] to make the rest of the intervals non-
 ## Solução
 
 
+Para a solução desse problema foi usado o método de algoritmo ambicioso interval scheduling. Onde foi feito a ordenação do vetor interval pelo fim (end), depois é avaliado se o segundo intervalo intersecta com o primeiro, se sim ele não faz nada, se não ele ele soma a quantidade de intervalos que não se intersectam em +1 e troca o fim base. No final é subtraído a quantidade de intervalos que não se intersectam pela a quantidade total de intervalos, e este é o resultado.
+
+```python
+def eraseOverlapIntervals(intervals):  
+    intervals.sort(key=lambda x: x[1])  
+    count = 1
+    end = intervals[0][1]  
+    for i in range(1, len(intervals)):
+        if intervals[i][0] >= end:
+            count += 1
+            end = intervals[i][1]  
+    return len(intervals) - count
+```
 
 **Exemplo:**
 
-
+![](./assets/exemploOverlapping.png)
 
 **Submissão:**<br>
-![]()
+
+![](./assets/Sub22.png)
 
 # 2402. Meeting Rooms III
 
@@ -211,11 +225,32 @@ The third child gets 1 candy because it satisfies the above two conditions.
 
 ## Solução
 
-Foi usado o algorítimo ambicioso 
+Foi usado o algorítimo ambicioso two-pass para resolver essa questão. Ele consiste em passar duas vezes (forward e backward pass) em um array comparando os valores somente uma vez com o vizinho de um lado, e depois do outro. Isso garante a melhor solução O(n) porque ele só percorre o vetor 2 vezes.
+
+```Python
+class Solution:
+    def candy(self, ratings: List[int]) -> int:
+        n = len(ratings)
+        candies = [1] * n
+        
+        # Forward pass
+        for i in range(1, n):
+            if ratings[i] > ratings[i - 1]:
+                candies[i] = candies[i - 1] + 1
+        
+        # Backward pass
+        for i in range(n - 2, -1, -1):
+            if ratings[i] > ratings[i + 1]:
+                candies[i] = max(candies[i], candies[i + 1] + 1)
+        
+        return sum(candies)
+          
+```
 
 **Exemplo:**
 
+![](./assets/exemploCandy.png)
 
 
 **Submissão:**<br>
-![]()
+![](./assets/Sub12.png)
