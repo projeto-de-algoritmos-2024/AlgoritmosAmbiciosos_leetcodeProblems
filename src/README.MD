@@ -90,10 +90,6 @@ def overlapping(intervals):
     return len(intervals) - count
 ```
 
-**Exemplo:**
-
-![](./assets/exemploOverlapping.png)
-
 **Submissão:**<br>
 
 ![](./assets/Sub22.png)
@@ -246,6 +242,9 @@ class Solution:
         return sum(candies)
           
 ```
+**Exemplo:**
+
+![](./assets/exemploCandy.png)
 
 **Submissão:**<br>
 ![](./assets/Sub12.png)
