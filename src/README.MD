@@ -79,7 +79,7 @@ Explanation: You need to remove two [1,2] to make the rest of the intervals non-
 Para a solução desse problema foi usado o método de algoritmo ambicioso interval scheduling. Onde foi feito a ordenação do vetor interval pelo fim (end), depois é avaliado se o segundo intervalo intersecta com o primeiro, se sim ele não faz nada, se não ele ele soma a quantidade de intervalos que não se intersectam em +1 e troca o fim base. No final é subtraído a quantidade de intervalos que não se intersectam pela a quantidade total de intervalos, e este é o resultado.
 
 ```python
-def eraseOverlapIntervals(intervals):  
+def overlapping(intervals):  
     intervals.sort(key=lambda x: x[1])  
     count = 1
     end = intervals[0][1]  
