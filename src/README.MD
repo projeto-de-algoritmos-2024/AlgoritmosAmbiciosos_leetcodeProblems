@@ -247,10 +247,5 @@ class Solution:
           
 ```
 
-**Exemplo:**
-
-![](./assets/exemploCandy.png)
-
-
 **Submissão:**<br>
 ![](./assets/Sub12.png)
