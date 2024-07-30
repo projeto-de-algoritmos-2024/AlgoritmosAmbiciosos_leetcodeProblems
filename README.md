@@ -31,7 +31,7 @@ Neste projeto, será abordado alguns problemas disponíveis na plataforma [LeetC
 **Pré-requisito**: Compilador de Python3.
 
 ## Link da Apresentação
-[]()<br>
+[Apresentação PA 17 - LeetCode Problems - Algoritmos Ambiciosos](https://youtu.be/s4A41QwdDY0)<br>
 
 
 
